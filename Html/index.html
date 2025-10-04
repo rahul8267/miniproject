@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/CSS/index.css" />
+
+    <script>
+      function toggleMenu() {
+        const mobileNav = document.querySelector(".mobile-nav");
+        mobileNav.classList.toggle("active");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logo-mark"><img src="/Assets/images.jpeg" alt="" /></div>
+        <div class="logo-text">
+          <div class="brand">COMPANY</div>
+          <div class="tag">business tagline</div>
+        </div>
+      </div>
+
+      <!-- Desktop nav -->
+      <nav class="desktop-nav">
+        <a href="">Home</a>
+        <a href="">About US</a>
+        <a href="">Our Service</a>
+        <a href="">Pricing</a>
+        <a href="">FAQ</a>
+        <a href="" class="head_btn">GEt A Quote</a>
+      </nav>
+
+      <!-- Mobile hamburger button -->
+      <button class="menu-toggle" onclick="toggleMenu()">≡</button>
+
+      <!-- Mobile nav (hidden by default, toggled via JS) -->
+      <nav class="mobile-nav">
+        <a href=""> <i class="fa-solid fa-house"></i> Home</a>
+        <a href=""> <i class="fa-solid fa-circle-info"></i> About US</a>
+        <a href="">
+          <i class="fa-solid fa-hand-holding-medical"></i> Our Service</a
+        >
+        <a href=""> <i class="fa-solid fa-tag"></i> Pricing</a>
+        <a href=""> <i class="fa-solid fa-circle-question"></i> FAQ</a>
+        <a href="" class="head_btn" style="color: #fff">CONTACT US</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero_section_one">
+        <div class="textDiv">
+          <h1>
+            Your Resume <br />
+            <span style="color: #fa1239">Deserves A Yes</span>
+            Let's <br />
+            Make It Happen
+          </h1>
+
+          <div class="para">
+            <p>
+              If Your Resume Isn't Getting Responses, It's Time For An Upgrade.
+              Get An ATS-Optimized Resume Crafted By HR Expert To Help You Land
+              More Interviews. Our Resume Are Designed To Get Your Foot In The
+              Door And Place Your Name At The Top Of The Shortlist.
+            </p>
+          </div>
+
+          <div class="hero_Btn">
+            <a href="" style="background-color: #fff; color: #fa1239"
+              >RESUME PAKAGES</a
+            >
+            <a href="" style="background-color: #fa1239; color: #fff"
+              >CONTACT US</a
+            >
+          </div>
+        </div>
+
+        <div class="imageDiv">
+          <img src="/Assets/girl.png" alt="" />
+        </div>
+      </section>
+
+      <section class="hero_section_Two">
+        <div class="section-tag">What You Get</div>
+        <h1>
+          You’re Not Just <span>Another Applicant</span> And Your Resume
+          Shouldn’t Look Like One
+        </h1>
+
+        <div class="cards">
+          <div class="card">
+            <img src="/Assets//card_One.jpeg" alt="Resume Icon" />
+            <h3>A Resume Format That Gets You Interviews</h3>
+            <p>
+              Get a professionally written, keyword-optimized resume that lands
+              in recruiter inboxes.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/Assets//card_two.png" alt="Cover Letter Icon" />
+            <h3>A Cover Letter Style That Stands Out Strong</h3>
+            <p>
+              Stand out with a cover letter that speaks directly to the role and
+              reflects your strengths.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/Assets//card_three.jpeg" alt="LinkedIn Icon" />
+            <h3>A LinkedIn Profile That Works For You</h3>
+            <p>
+              Attract the right eyes, start conversations, and show up in
+              recruiter searches.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="/Assets//interview-rafiki.png" alt="Interview Icon" />
+            <h3>An Interview Strategy That Builds Confidence</h3>
+            <p>
+              Interview preparation with real HR professionals so you speak
+              clearly and confidently.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
