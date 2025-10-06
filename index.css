@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -123,7 +123,7 @@ main {
 .hero_section_one {
   margin: 0;
   display: flex;
-  padding: 5rem 3rem 0 3rem;
+  padding: 3rem 3rem 0rem 3rem;
   background-color: pink;
   align-items: center;
   justify-content: space-between;
@@ -177,16 +177,10 @@ main {
   box-shadow: 2px 2px 5px #fa1239;
 }
 
-/* .imageDiv img {   Figma Design size
-  width: 500px;
-  height: 720px;
-} */
-
-
-.imageDiv img {   
+.imageDiv img {
   width: 400px;
   height: 600px;
-} */
+}
 
 /* .imageDiv img {
   max-width: 100%;
