@@ -177,10 +177,21 @@ main {
   box-shadow: 2px 2px 5px #fa1239;
 }
 
-.imageDiv img {
+/* .imageDiv img {   Figma Design size
   width: 500px;
   height: 720px;
-}
+} */
+
+
+.imageDiv img {   
+  width: 400px;
+  height: 600px;
+} */
+
+/* .imageDiv img {
+  max-width: 100%;
+  height: auto;
+} */
 
 /* hero_Section_Two Css Design */
 .hero_section_Two {
