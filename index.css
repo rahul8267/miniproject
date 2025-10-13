@@ -5,23 +5,25 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   width: fit-content;
-  line-height: 1.6;
+  /* height: 100vh; */
 }
 
 header {
-  padding: 1rem 3rem;
+  height: 100px;
+  padding: 0 3rem;
   position: sticky;
   top: 0;
   z-index: 1000;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
 }
 
-.logo img {
-  height: 50px;
+.logo-img img {
+  margin-top: 10px;
+  height: 55px;
 }
 
 .logo {
@@ -44,6 +46,15 @@ header {
   margin-top: 0;
 }
 
+.nav-list {
+  padding: 0 40px;
+  margin-right: 80px;
+}
+
+.nav-list a {
+  margin-right: 70px;
+}
+
 /* Desktop nav */
 nav.desktop-nav {
   display: flex;
@@ -55,11 +66,11 @@ nav.desktop-nav a {
   color: #000;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .head_btn {
-  padding: 14px 22px;
+  padding: 10px 25px;
   background-color: #ff4d4d;
   color: #fff;
   text-align: center;
@@ -123,31 +134,57 @@ main {
 .hero_section_one {
   margin: 0;
   display: flex;
-  padding: 3rem 3rem 0rem 3rem;
+  padding: 3rem 3rem 0rem 5rem;
   background-color: pink;
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
 }
 
-.textDiv h1 {
-  font-weight: 700;
+/* CSSS H!  !!JN!KKLNK!KL!J */
+
+h1 {
+  font-family: "Poppins", sans-serif;
   font-size: 64px;
   margin: 0 0 1rem 0;
-  line-height: 1.2;
+  line-height: 78px;
+  color: #111;
 }
+
+.highlight {
+  position: relative;
+  color: #ff2e4c; /* red color for the text */
+  /* display: inline-block;s */
+}
+
+/* 👇 Adds your underline image */
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* adjust space below text */
+  width: 100%;
+  height: 22px; /* height of underline image */
+  background: url("Assets/Underline.png") no-repeat center;
+  margin-right: 50px;
+  background-size: contain;
+}
+
+/* hdjfhdfuhufhi;fkl;f;klskf;;fkfkj */
 
 .textDiv h1 span {
   color: #fa1239;
+  line-height: 1px;
 }
 
-.textDiv .para {
-  font-weight: 400;
-  font-size: 16px;
+.textDiv .para p {
   margin: 0 0 2rem 0;
 }
 
 .textDiv .para p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
   margin: 0;
 }
 
@@ -158,11 +195,12 @@ main {
 
 .hero_Btn a {
   display: inline-block;
-  padding: 14px 22px;
+  padding: 10px 22px;
   text-decoration: none;
   border-radius: 50px;
   border: 2px solid #fa1239;
   transition: all 0.3s ease;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -182,34 +220,29 @@ main {
   height: 600px;
 }
 
-/* .imageDiv img {
-  max-width: 100%;
-  height: auto;
-} */
-
 /* hero_Section_Two Css Design */
 .hero_section_Two {
   max-width: 1255px;
-  margin: 60px auto;
+  margin: auto;
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 50px;
 }
 
 .section-tag {
   display: inline-block;
   background: #fde7e7;
   color: #333;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   border-radius: 6px;
   padding: 6px 16px;
   margin-bottom: 20px;
 }
 
 .hero_section_Two h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.3;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 55px;
   margin-bottom: 50px;
 }
 
@@ -226,31 +259,28 @@ main {
 .card {
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 30px 20px;
   transition: transform 0.3s ease;
+  object-fit: contain;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
-.card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
-}
-
 .card h3 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   margin-bottom: 10px;
+  line-height: 30px;
 }
 
 .card p {
-  font-size: 15px;
+  font-size: 18px;
   color: #666;
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 30px;
   margin: 0;
 }
 
@@ -310,10 +340,16 @@ main {
 
   header {
     padding: 0.75rem 1rem;
+    height: 50px;
   }
 
-  .logo {
-    font-size: 18px;
+  .logo-img {
+    padding: 0;
+    margin: 0;
+  }
+  .logo-img img {
+    height: 40px;
+    width: 150px;
   }
 
   nav.desktop-nav {
@@ -322,8 +358,8 @@ main {
 
   .menu-toggle {
     display: block;
-    font-size: 24px;
-    color: #ff4d4d;
+    font-size: 30px;
+    color: #000;
     cursor: pointer;
     background: none;
     border: none;
@@ -335,97 +371,134 @@ main {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     width: 100%;
-    background-color: #fff;
+    background: #fde7e7;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     padding: 1rem;
     z-index: 999;
     gap: 0.5rem;
+    opacity: 0.9;
   }
 
   .mobile-nav.active {
     display: flex;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    right: 0;
+  }
+
+  .mobile-nav.active a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+    line-height: 2;
   }
 
   .mobile-nav a {
+    display: flex;
     padding: 0.5rem 0;
     font-size: 16px;
     text-align: center;
-    width: 100%;
+  }
+
+  .mobile-nav.active .head_btn {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #fa1239;
   }
 
   .hero_section_one {
     flex-direction: column;
-    padding: 1.5rem 1rem;
+    padding: 12px 10px 0 10px;
     gap: 1rem;
   }
 
   .textDiv h1 {
     font-size: 32px;
-    line-height: 1.2;
+    font-weight: 700;
+    line-height: 50px;
   }
 
-  .textDiv .para {
-    font-size: 14px;
+  .textDiv .para p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
     padding: 0 0.5rem;
+    margin-bottom: 16px;
   }
 
   .hero_Btn {
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
+    margin-bottom: 16px;
   }
 
   .hero_Btn a {
-    width: 100%;
-    max-width: 250px;
+    width: 50%;
     text-align: center;
-    padding: 12px 18px;
-    font-size: 14px;
+    padding: 6px 16px;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   .imageDiv img {
-    max-width: 80%;
+    width: 80%;
+    height: 80%;
   }
 
   .hero_section_Two {
-    margin: 30px auto;
-    padding: 20px 10px;
+    padding: 20px 25px 40px;
   }
 
   .section-tag {
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: 600;
     padding: 4px 12px;
   }
 
   .hero_section_Two h1 {
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: 600;
     margin-bottom: 30px;
-    padding: 0 0.5rem;
+    line-height: 40px;
   }
 
   .cards {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 20px;
     padding: 0 0.5rem;
   }
 
   .card {
-    padding: 20px 15px;
+    padding: 20px 10px 50px 10px;
   }
 
   .card img {
-    width: 60px;
-    height: 60px;
+    width: 40%;
+    height: 40%;
   }
 
   .card h3 {
-    font-size: 16px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
   }
 
   .card p {
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .highlight::after {
+    background-image: none;
   }
 }
