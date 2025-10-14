@@ -196,8 +196,8 @@ h1 {
 }
 
 .imageDiv img {
-  width: 400px;
-  height: 600px;
+  width: 600px;
+  height: 700px;
 }
 
 /* hero_Section_Two Css Design */
@@ -320,7 +320,7 @@ h1 {
 
   header {
     /* padding: 0.75rem 1rem; */
-    height: 300px;
+    height: 50px;
   }
 
   .logo-img {
@@ -389,8 +389,9 @@ h1 {
   .mobile-nav.active .head_btn {
     display: flex;
     justify-content: center;
-    /* width: 50%; */
+    width: 50%;
     background-color: #fa1239;
+    padding: 5px 10px;
   }
 
   .hero_section_one {
@@ -416,7 +417,7 @@ h1 {
   .hero_Btn {
     flex-direction: column;
     align-items: center;
-    gap: 0.75rem;
+    gap: 12px;
     margin-bottom: 16px;
   }
 
@@ -426,6 +427,11 @@ h1 {
     padding: 6px 16px;
     font-size: 18px;
     font-weight: 500;
+  }
+
+  .hero_Btn .contactUs-btn {
+    width: 40%;
+    margin-top: 10px;
   }
 
   .imageDiv img {
